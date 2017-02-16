@@ -8,7 +8,7 @@ let meetingsRoom = [
     {
         name: "2",
         available: "no",
-        dateTaken: new Date("February 13, 2017 11:13:00");
+        dateTaken: new Date("February 13, 2017 11:13:00"),
     },
 
     {
@@ -29,13 +29,43 @@ let gamesRoom = [
     {
         name: "2",
         available: "no",
-        dateTaken: new Date("February 12, 2017 4:13:00");
+        dateTaken: new Date("February 12, 2017 4:13:00"),
     },
 
     {
         name: "3",
         available: "yes",
         dateTaken: undefined,
+    },
+
+    {
+        name: "4",
+        available: "yes",
+        dateTaken: undefined
+    },
+
+    {
+        name:  "5",
+        available: "no",
+        dateTaken: new Date("Februray 1, 2017 2:00:00");
+    },
+
+    {
+        name: "6",
+        available: "yes",
+        dateTaken: undefined
+    },
+
+    {
+        name: "7",
+        available: "yes",
+        dateTaken: undefined
+    },
+
+    {
+        name: "8",
+        available: "yes",
+        dateTaken: undefined;
     }
 ]
 
@@ -56,6 +86,12 @@ let quietTimeRoom = [
         name: "3",
         available: "yes",
         dateTaken: undefined,
+    },
+
+    {
+        name: "4",
+        available: "no",
+        dateTaken: new Date("February 16, 2017 8:00:00")
     }
 ]
 
@@ -69,13 +105,31 @@ let learningRoom = [
     {
         name: "2",
         available: "no",
-        dateTaken: "February 16, 2017 1:13:00",
+        dateTaken: new Date("February 16, 2017 1:13:00"),
     },
 
     {
         name: "3",
         available: "no",
-        dateTaken: Date("February 2, 2017 3:00:00"),
+        dateTaken: new Date("February 2, 2017 3:00:00"),
+    },
+
+    {
+        name: "4",
+        available:"no",
+        dateTaken: new Date("February 3, 2017 3:00:00")
+    },
+    
+    {
+        name: "5",
+        available: "yes",
+        dateTaken: undefined,
+    },
+
+    {
+        name: "6",
+        available: "yes",
+        dateTaken: undefined,
     }
 
 ]
@@ -97,6 +151,36 @@ let workingRoom = [
         name: "3",
         available: "yes",
         dateTaken: undefined
+    },
+
+    {
+        name: "4",
+        available: "no",
+        dateTaken: new Date("February 6, 2017 2:00:00")
+    },
+
+    {
+        name: "5",
+        available: "yes",
+        dateTaken: undefined
+    },
+
+    {
+        name: "6",
+        available: "yes",
+        dateTaken: undefined
+    },
+
+    {
+        name: "7",
+        available: "no",
+        dateTaken: undefined
+    },
+
+    {
+        name: "8",
+        available: "no",
+        dateTaken: new Date("February 1, 2017 8:00:00");
     }
 
 ]
@@ -124,6 +208,8 @@ function Room() {
         case 4:
             result.innerHtml = JSON.stringify(workingRoom);
             break;
+
+        
     }
 
 }
