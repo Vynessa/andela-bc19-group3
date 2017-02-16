@@ -7,7 +7,7 @@ var app = express();
 var port = 3000;
 
 app.use(express.static(process.cwd() + './public'));
-app.use(expres.static(process.cwd() + './src'));
+app.use(expres.static(process.cwd() + './src/views'));
 
 app.get('/', function (req, res) {
     res.send('Hello Vanessa!!!!');
