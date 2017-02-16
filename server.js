@@ -34,6 +34,7 @@ var db = mongoose.connection;
 db.on ('error', console.error.bind(console, 'connection error:'));
 db.once ('open', function(){
     console.log('Successfully connected to mongodb database');
+    roomModel.seedRooms();
 });
 app.listen(port, function () {
     console.log('Listen on port: ' + port);
