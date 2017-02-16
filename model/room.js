@@ -1,9 +1,9 @@
 var mongoose = require('mongoose');
 
 var roomSchema = mongoose.Schema({
-    title:{type:String},
-    description:{type:String},
-    author:{type:String},
+    name:{type:String},
+    available:{type:String},
+    number:{type:Number},
 });
 
 
