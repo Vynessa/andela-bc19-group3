@@ -175,7 +175,7 @@ let workingRoom = [
     {
         name: "7",
         available: "no",
-        dateTaken: undefined
+        dateTaken: Date("February 1, 2017 8:00:00")
     },
 
     {
@@ -218,8 +218,9 @@ let workingRoom = [
             str += "Room No: " + piece.name +'\n';
             str +="Available: " +piece.available +'\n';
             if(piece.available==="no"){
-                str += "Date Taken: " +piece.dateTaken+'\n\n';
+                str += "Date Taken: " +piece.dateTaken+'\n';
             }
+            str +='\n';
         }
         return str;
     }
