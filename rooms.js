@@ -217,7 +217,9 @@ let workingRoom = [
         while(piece = data.pop()){
             str += "Room No: " + piece.name +'\n';
             str +="Available: " +piece.available +'\n';
-            str += "Date Taken: " +piece.dateTaken+'\n\n';
+            if(piece.available==="no"){
+                str += "Date Taken: " +piece.dateTaken+'\n\n';
+            }
         }
         return str;
     }
