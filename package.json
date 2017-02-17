@@ -1,7 +1,9 @@
 {
-  "name": "andelagroup4",
+
+  "name": "andela-bc19-group3",
   "version": "1.0.0",
-  "description": "A Room Checking App",
+  "description": "A room checking app that enables Andelans find rooms for different activities and check for availability.",
+
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,21 +12,20 @@
     "type": "git",
     "url": "git+https://github.com/Vynessa/andela-bc19-group3.git"
   },
+
+  "author": "Vanessa Ejikeme",
   "keywords": [
     "Express"
   ],
-  "author": "group 4",
+
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Vynessa/andela-bc19-group3/issues"
   },
   "homepage": "https://github.com/Vynessa/andela-bc19-group3#readme",
   "dependencies": {
-    "bower": "^1.8.0",
-    "ejs": "^2.5.5",
     "express": "^4.14.1",
-    "jasmine-node": "^1.14.5",
-    "mongodb": "^2.2.24",
-    "mongoose": "^4.8.3"
+    "nodemon": "^1.11.0"
+
   }
 }
