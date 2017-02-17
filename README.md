@@ -31,7 +31,7 @@ Before beginning, ensure you have the required software to run this application.
 >`npm install`
 
 4. Navigate to command prompt (for Windows OS) or terminal (for Mac OS) and run the code below to start the server:
->`nodemon server.js`
+>`node server.js`
 
 5. Enter the URL below in your web browser
 >`http://localhost:5000/`
