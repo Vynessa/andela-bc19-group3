@@ -1,22 +1,22 @@
 # andela-bc19-group3
-Andela Room Checker
+#Andela Room Checker
 
-Introduction
+##Introduction
 
 A web application that allows Andelan's to check Available Rooms
 
-Features
+##Features
 
 Allows User Check Availability of rooms by Categories.
 
-Backend End Dependencies
+##Backend End Dependencies
 
 Node.js - A JavaScript runtime for building server-side JavaScript applications.
 Express - A server-side minimal and flexible Node.js web application framework.
 
 Before beginning, ensure you have the required software to run this application.
 
-Major Dependencies.
+##Major Dependencies.
 
 Node.js - A version with ECMAScript 2009 (ES5) support.
 ExpressJS - This app has been tested on version 6.9.1
