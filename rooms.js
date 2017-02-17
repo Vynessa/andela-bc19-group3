@@ -30,7 +30,7 @@ let gamesRoom = [
     {
         name: "2",
         available: "no",
-        dateTaken: new Date("February 12, 2017 4:13:00"),
+        dateTaken: new Date("February 12, 2017 4:13:00")
     },
 
     {
@@ -42,13 +42,13 @@ let gamesRoom = [
     {
         name: "4",
         available: "yes",
-        dateTaken: undefined
+        dateTaken: new Date()
     },
 
     {
         name:  "5",
         available: "no",
-        dateTaken: new Date("Februray 1, 2017 2:00:00"),
+        dateTaken: new Date("Februray 1, 2017 2:00:00")
     },
 
     {
