@@ -1,4 +1,5 @@
-let meetingsRoom = [
+    function room(){
+    let meetingsRoom = [
     {
         name: "1",
         available: "yes",
@@ -47,7 +48,7 @@ let gamesRoom = [
     {
         name:  "5",
         available: "no",
-        dateTaken: new Date("Februray 1, 2017 2:00:00");
+        dateTaken: new Date("Februray 1, 2017 2:00:00"),
     },
 
     {
@@ -65,7 +66,7 @@ let gamesRoom = [
     {
         name: "8",
         available: "yes",
-        dateTaken: undefined;
+        dateTaken: undefined,
     }
 ]
 
@@ -180,36 +181,45 @@ let workingRoom = [
     {
         name: "8",
         available: "no",
-        dateTaken: new Date("February 1, 2017 8:00:00");
+        dateTaken: new Date("February 1, 2017 8:00:00"),
     }
 
 ]
 
-
-
-
-function Room() {
+    console.log("called");
     let categories = document.getElementById("categories");
-    let  result = document.getElementById("result");
-    selectedIndex = categories.selectedIndex;
+    let  result = document.getElementById('result');
+    selectedIndex = Number.parseInt(categories.selectedIndex);
+    console.log(selectedIndex);
     switch (selectedIndex) {
-        case 0:
-            result.innerHtml = JSON.stringify(meetingsRoom);
-            break;
         case 1:
-            result.innerHtml = JSON.stringify(gamesRoom);
+            result.innerText = presentData(meetingsRoom);
+           // console.log(result.innerText);
             break;
         case 2:
-            result.innerHtml = JSON.stringify(quietTimeRoom);
+            result.innerText = presentData(gamesRoom);
             break;
         case 3:
-            result.innerHtml = JSON.stringify(learningRoom);
+            result.innerText = presentData(quietTimeRoom);
             break;
         case 4:
-            result.innerHtml = JSON.stringify(workingRoom);
+            result.innerText = presentData(learningRoom);
             break;
+        case 5:
+            result.innerText = presentData(workingRoom);
+            break;
+    }
+    
 
-        
+
+    function presentData(data){
+        var str = '';
+        while(piece = data.pop()){
+            str += "Room No: " + piece.name +'\n';
+            str +="Available: " +piece.available +'\n';
+            str += "Date Taken: " +piece.dateTaken+'\n\n';
+        }
+        return str;
     }
 
 }
